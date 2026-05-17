@@ -8,5 +8,6 @@ class Config:
     MYSQL_USER = os.getenv('MYSQL_USER', 'root')
     MYSQL_PASSWORD = os.getenv('MYSQL_PASSWORD', '')
     MYSQL_DB = os.getenv('MYSQL_DB', 'project_management_db')
-    SECRET_KEY = os.getenv('SECRET_KEY', 'your-secret-key-here')
+    SECRET_KEY = os.getenv('SECRET_KEY', 'your-secret-key-change-in-production')
     JWT_EXPIRATION = 86400  # 24 hours
+    FLASK_ENV = os.getenv('FLASK_ENV', 'development')
